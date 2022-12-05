@@ -156,6 +156,63 @@
         }
       }
     },
+    "lib/forge-std/src/Script.sol": {
+      "lastModificationDate": 1670207206745,
+      "contentHash": "a0d7ca329f3374a1698e48c493ab4f1a",
+      "sourceName": "lib/forge-std/src/Script.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Common.sol",
+        "lib/forge-std/src/Components.sol",
+        "lib/forge-std/src/StdAssertions.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdError.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "Script": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Script.sol/Script.json"
+        },
+        "ScriptBase": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Script.sol/ScriptBase.json"
+        }
+      }
+    },
     "lib/forge-std/src/StdAssertions.sol": {
       "lastModificationDate": 1670207205771,
       "contentHash": "d3f7487aaf77c715fdbdea89ea4f8399",
@@ -838,6 +895,67 @@
         },
         "ERC721TokenReceiver": {
           "0.8.17+commit.8df45f5f.Linux.gcc": "ERC721.sol/ERC721TokenReceiver.json"
+        }
+      }
+    },
+    "script/NFT.s.sol": {
+      "lastModificationDate": 1670263986187,
+      "contentHash": "9dfcc2e2e57487d91a5e85cae8e1091f",
+      "sourceName": "script/NFT.s.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Common.sol",
+        "lib/forge-std/src/Components.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdAssertions.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdError.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/math/Math.sol",
+        "lib/solmate/src/tokens/ERC721.sol",
+        "src/NFT.sol"
+      ],
+      "versionRequirement": "^0.8.7",
+      "artifacts": {
+        "MyScript": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "NFT.s.sol/MyScript.json"
         }
       }
     },
